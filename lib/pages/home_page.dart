@@ -1,3 +1,4 @@
+import 'package:farmerapp/pages/disease.dart';
 import 'package:flutter/material.dart';
 import 'package:farmerapp/classes/language.dart';
 import 'package:farmerapp/classes/language_constants.dart';
@@ -24,6 +25,7 @@ class _HomePageState extends State<HomePage> {
   final screens = [
     Home(),
     WHomescreen(),
+    Disease()
   ];
 
   @override
@@ -93,10 +95,19 @@ class _HomePageState extends State<HomePage> {
           ),
 
           BottomNavigationBarItem(
+            icon:Icon(Icons.energy_savings_leaf),
+            label: 'Potato Disease',
+            backgroundColor: Colors.lightGreen,
+          ),
+
+          BottomNavigationBarItem(
             icon:Icon(Icons.chat),
             label: translation(context).chat,
             backgroundColor: Colors.lightGreen,
           ),
+
+
+
         ],
 
       ),

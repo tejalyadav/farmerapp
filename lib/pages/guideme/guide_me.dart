@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'which_crop.dart';
+import 'market_price.dart';
 import 'where_to_sell.dart';
 import 'where_to_store.dart';
 
@@ -34,47 +34,49 @@ class MyHomePage  extends StatelessWidget {
       //),
       body: Center(
 
-        child: Column(
+        child:  Column(
 
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Image.asset('assets/images/which_crop.jpg',
-                height: 100,
-                width: 100),
+            //Image.asset('assets/images/which_crop.jpg',
+                //height: 100,
+                //width: 100),
 
 
             SizedBox(
               width: 300,
+              height: 150,
               child: ElevatedButton.icon(
                 style: ElevatedButton.styleFrom(
-                  shape: StadiumBorder(),
-                  side: BorderSide(color: Colors.black),
-                  primary: Colors.green,
+                  //shape: StadiumBorder(),
+                  side: BorderSide(color: Colors.green),
+                  primary: Colors.lightGreen,
                   minimumSize: const Size.fromHeight(55), // NEW
                 ),
                 onPressed: () {
                   //_askCameraPermission();
                   Navigator.push(context, new MaterialPageRoute(
                     builder: (context) =>
-                    new WhichCrop(),
+                    new MarketPrice(),
                   ));
                 },
-                label: Text('Crop Recommendation'),
-                icon: Icon(Icons.light),
+                label: Text('Market Price', style: TextStyle( color: Colors.white, fontSize: 22 )),
+                icon: Icon(Icons.attach_money, size: 30),
               ),),
 
-            Image.asset('assets/images/Warehouses.jpg',
-                height: 100,
-                width: 100),
+            //Image.asset('assets/images/Warehouses.jpg',
+                //height: 100,
+                //width: 100),
 
 
             SizedBox(
               width: 300,
+              height: 150,
               child: ElevatedButton.icon(
                 style: ElevatedButton.styleFrom(
-                  shape: StadiumBorder(),
-                  side: BorderSide(color: Colors.black),
-                  primary: Colors.green,
+                  //shape: StadiumBorder(),
+                  side: BorderSide(color: Colors.green),
+                  primary: Colors.lightGreen,
                   minimumSize: const Size.fromHeight(55), // NEW
                 ),
                 onPressed: () {
@@ -84,34 +86,14 @@ class MyHomePage  extends StatelessWidget {
                     new Warehouses(),
                   ));
                 },
-                label: Text('Warehouse  location'),
-                icon: Icon(Icons.light),
+                label: Text('Warehouse  location', style: TextStyle( color: Colors.white, fontSize: 22 )),
+                icon: Icon(Icons.home_work , size: 30),
               ),),
 
-            Image.asset('assets/images/Where_to_sell.jpg',
-                height: 100,
-                width: 100),
 
 
-            SizedBox(
-              width: 300,
-              child: ElevatedButton.icon(
-                style: ElevatedButton.styleFrom(
-                  shape: StadiumBorder(),
-                  side: BorderSide(color: Colors.black),
-                  primary: Colors.green,
-                  minimumSize: const Size.fromHeight(55), // NEW
-                ),
-                onPressed: () {
-                  //_askCameraPermission();
-                  Navigator.push(context, new MaterialPageRoute(
-                    builder: (context) =>
-                    new WhereSell(),
-                  ));
-                },
-                label: Text('Where to sell?'),
-                icon: Icon(Icons.light),
-              ),),
+
+
           ],
 
         ),

@@ -65,8 +65,8 @@ class MyHomePage  extends StatelessWidget {
                     new GuideMe(),
                   ));
                 },
-                label: Text('Guide Me'),
-                icon: Icon(Icons.man),
+                label: Text('Latest Information'),
+                icon: Icon(Icons.info_outline_rounded),
               ),),
 
             Image.asset('assets/images/sell_my_crops.jpg',
@@ -89,8 +89,8 @@ class MyHomePage  extends StatelessWidget {
                     new SellMyCrops(),
                   ));
                 },
-                label: Text('Sell My Crop'),
-                icon: Icon(Icons.shopping_cart),
+                label: Text('Yogic Farming'),
+                icon: Icon(Icons.agriculture),
               ),),
           ],
 
